@@ -57,16 +57,11 @@ export const Img = styled.img`
   width: 400px;
 
   @media ${device.tablet} {
-    /* width: 400;
-    height: auto; */
-
     height: 300px;
   }
 
   @media ${device.desktop} {
     width: 500px;
     height: auto;
-
-    /* height: 500px; */
   }
 `;

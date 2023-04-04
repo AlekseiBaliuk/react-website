@@ -12,9 +12,7 @@ export const Card = styled.div`
   border: ${theme.borders.accent};
   background: ${(props) => props.theme.colors.white};
   box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
-  /* @media ${device.tablet} {
-    max-width: 300px;
-  } */
+
   @media ${device.desktop} {
     width: 288px;
   }

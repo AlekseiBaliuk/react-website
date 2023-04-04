@@ -1,8 +1,6 @@
 import { theme } from "constants/theme";
 import styled from "styled-components";
 import { device } from "../../devices";
-// import { Box } from "@mui/material";
-
 
 export const Header = styled.header`
   margin-bottom: 40px;

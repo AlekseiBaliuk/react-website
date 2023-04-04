@@ -15,9 +15,9 @@ const HomePage = () => {
       <Products />
       <Container>
         <SC.CardWrapper>
-          <Card />
-          <Card />
-          <Card />
+          <Card price="20" />
+          <Card price="30" />
+          <Card price="40" />
         </SC.CardWrapper>
       </Container>
       <Info />

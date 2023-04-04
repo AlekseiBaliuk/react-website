@@ -26,7 +26,7 @@ const Card = ({ price }) => {
       variants={titleVariants}
     >
       <SC.Card>
-        <SC.Title>20${price}</SC.Title>
+        <SC.Title>{price}$</SC.Title>
         <SC.Text>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum is simply dummy text of the printing and
