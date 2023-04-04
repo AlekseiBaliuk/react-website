@@ -30,7 +30,9 @@ const Card = ({ price }) => {
         <SC.Text>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
+          typesetting industry.Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry.
         </SC.Text>
 
         <SC.Button type="button" onClick={handleClick}>

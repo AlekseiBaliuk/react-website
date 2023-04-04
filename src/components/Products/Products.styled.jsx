@@ -3,9 +3,9 @@ import { device } from "devices";
 import styled from "styled-components";
 
 export const Title = styled.h2`
+  text-align: left;
   padding: 30px 0;
   color: ${theme.colors.white};
-  text-align: center;
 `;
 
 export const InfoWrapper = styled.div`

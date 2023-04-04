@@ -4,12 +4,11 @@ import { theme } from "constants/theme";
 
 export const Card = styled.div`
   text-align: center;
-
-  max-width: 280px;
-  height: 400px;
+  max-width: 320px;
+  min-height: 500px;
   padding: 10px;
   border-radius: 20px;
-  border: ${theme.borders.accent};
+  border: ${theme.borders.main};
   background: ${(props) => props.theme.colors.white};
   box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
 
@@ -40,7 +39,7 @@ export const Text = styled.p`
   font-weight: ${theme.fontWeights.fw500};
 
   @media ${device.tablet} {
-    padding: 10px 30px;
+    padding: 10px 10px;
   }
 `;
 
@@ -58,6 +57,7 @@ export const Button = styled.button`
   width: 160px;
   opacity: 0.9;
   margin-top: 40px;
+  margin-bottom: 10px;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,7 +67,7 @@ export const Button = styled.button`
   }
 
   @media ${device.tablet} {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   @media ${device.desktop} {

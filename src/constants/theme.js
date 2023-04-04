@@ -1,14 +1,9 @@
 export const theme = {
   colors: {
     accent: "#912CEE",
-    hoverAccent: "#FF6101",
-    // background: "#FDF7F2",
-    // inputBackground: "rgba(245, 146, 86, 0.5)",
-    // mainText: "#111111",
-    // searchText: "#535353",
-    // newsText: "#111321",
-    // navText: "#181C27",
-    // inputText: "rgba(17, 17, 17, 0.6)",
+    background: "rgb(108 22 199)",
+    purple: "#d6b6fc",
+
     black: "#000000",
     white: "#ffffff",
   },
@@ -40,7 +35,7 @@ export const theme = {
   },
   borders: {
     main: "1px solid #912CEE",
-    accent: "1px solid #AD00FF",
+    accent: "1px solid white",
     none: "none",
   },
   radii: {

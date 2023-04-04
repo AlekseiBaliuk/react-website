@@ -10,7 +10,7 @@ const SharedLayout = () => {
     >
       <Header />
       <Suspense fallback={<div>Loading</div>}>
-        <main style={{ flex: "auto" }}>
+        <main style={{ flex: "auto", paddingTop: "113px" }}>
           <Outlet />
         </main>
         <Footer />

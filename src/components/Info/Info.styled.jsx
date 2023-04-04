@@ -1,10 +1,11 @@
 import { theme } from "constants/theme";
 import styled from "styled-components";
+import bg from "../../staticImages/section-bg.webp";
 
 export const Title = styled.h2`
-  padding: 30px 0;
+  padding: 60px 0;
   text-align: center;
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
 
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs48};
@@ -43,7 +44,6 @@ export const Button = styled.button`
   width: 160px;
   opacity: 0.9;
   margin-top: 40px;
-  /* margin-left: 80px; */
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,4 +56,12 @@ export const Button = styled.button`
 export const InfoCardWrapper = styled.div`
   text-align: center;
   padding: 40px 0;
+`;
+
+export const InfoSection = styled.section`
+  margin: 20px auto;
+  padding: 130px 0px;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
