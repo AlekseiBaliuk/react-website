@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import logo from "../../staticImages/white.png";
-import logo from "../../staticImages/purple.png";
+import logo from "../../staticImages/purple1.png";
+// import logo from "../../staticImages/purple.png";
+import * as SC from './Logo.styled'
 
 const Logo = () => {
   return (
     <Link to="/">
-      <img src={logo} alt="logo" width="200" />
+      <SC.Img src={logo} alt="logo" width="200" />
     </Link>
   );
 };
