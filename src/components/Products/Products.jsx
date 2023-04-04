@@ -1,10 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+import * as SC from "./Products.styled";
+
 import { Container } from "components/Container/Container.styled";
 import Section from "components/Section/Section";
-import * as SC from "./Products.styled";
 import placeholder from "../../staticImages/placeholder.png";
 
 const Products = () => {
+  const handleClick = () => {
+    console.log("Click");
+  };
+
   return (
     <Section>
       <Container>
@@ -17,7 +23,14 @@ const Products = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </SC.Text>
-            <SC.Button type="button">Get Started</SC.Button>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <SC.Button type="button" onClick={handleClick}>
+                Get Started
+              </SC.Button>
+            </motion.div>
           </SC.InfoWrapper>
           <SC.Img src={placeholder} alt="placeholder" />
         </SC.Wrapper>

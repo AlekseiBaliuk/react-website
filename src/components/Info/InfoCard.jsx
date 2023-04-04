@@ -1,7 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
 import * as SC from "./Info.styled";
 
 const InfoCard = ({ heading }) => {
+  const handleClick = () => {
+    console.log("Click");
+  };
+
   return (
     <SC.InfoCardWrapper>
       <SC.SubTitle>{heading}</SC.SubTitle>
@@ -16,7 +21,14 @@ const InfoCard = ({ heading }) => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </SC.Text>
-      <SC.Button>Learn More</SC.Button>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      >
+        <SC.Button type="button" onClick={handleClick}>
+          Learn More
+        </SC.Button>
+      </motion.div>
     </SC.InfoCardWrapper>
   );
 };

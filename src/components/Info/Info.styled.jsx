@@ -12,6 +12,7 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
+  text-align: left;
   padding: 30px 0;
   color: ${theme.colors.white};
   font-family: ${theme.fonts.main};
@@ -21,6 +22,7 @@ export const SubTitle = styled.h3`
 
 export const Text = styled.p`
   padding: 30px 0;
+  text-align: left;
   color: ${theme.colors.white};
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs18};
@@ -41,7 +43,7 @@ export const Button = styled.button`
   width: 160px;
   opacity: 0.9;
   margin-top: 40px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,5 +54,6 @@ export const Button = styled.button`
 `;
 
 export const InfoCardWrapper = styled.div`
+  text-align: center;
   padding: 40px 0;
 `;

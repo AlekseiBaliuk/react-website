@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import * as SC from "./Card.styled";
 
 const Card = ({ price }) => {
+  const handleClick = () => {
+    console.log("Click");
+  };
+
   const titleVariants = {
     hidden: {
       y: 400,
@@ -20,11 +24,7 @@ const Card = ({ price }) => {
   };
 
   return (
-    <motion.div
-      initial={"hidden"}
-      animate={"visible"}
-      variants={titleVariants}
-    >
+    <motion.div initial={"hidden"} animate={"visible"} variants={titleVariants}>
       <SC.Card>
         <SC.Title>{price}$</SC.Title>
         <SC.Text>
@@ -33,7 +33,9 @@ const Card = ({ price }) => {
           typesetting industry.
         </SC.Text>
 
-        <SC.Button>Get Started</SC.Button>
+        <SC.Button type="button" onClick={handleClick}>
+          Get Started
+        </SC.Button>
       </SC.Card>
     </motion.div>
   );
