@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import bg from "../../staticImages/section-bg.webp";
-import bg from "../../staticImages/hero-bg.webp";
+// import bg from "../../staticImages/hero-bg.webp";
+import bg from "../../staticImages/hero-bg-png.png";
 
 export const Section = styled.section`
   margin: 20px auto;
