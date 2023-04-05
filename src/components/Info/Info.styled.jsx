@@ -1,6 +1,7 @@
 import { theme } from "constants/theme";
 import styled from "styled-components";
-import bg from "../../staticImages/section-bg.webp";
+import { motion } from "framer-motion";
+
 
 export const Title = styled.h2`
   padding: 60px 0;
@@ -15,7 +16,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.h3`
   text-align: left;
   padding: 30px 0;
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs36};
   font-weight: ${theme.fontWeights.fw600};
@@ -24,13 +25,13 @@ export const SubTitle = styled.h3`
 export const Text = styled.p`
   padding: 30px 0;
   text-align: left;
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs18};
   font-weight: ${theme.fontWeights.fw500};
 `;
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   border-radius: ${theme.radii.br10};
   border: ${theme.borders.main};
   color: ${theme.colors.white};
@@ -54,14 +55,5 @@ export const Button = styled.button`
 `;
 
 export const InfoCardWrapper = styled.div`
-  text-align: center;
   padding: 40px 0;
-`;
-
-export const InfoSection = styled.section`
-  margin: 20px auto;
-  padding: 130px 0px;
-  background-image: url(${bg});
-  background-repeat: no-repeat;
-  background-size: cover;
 `;

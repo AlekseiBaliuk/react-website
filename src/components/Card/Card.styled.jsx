@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { device } from "devices";
 import { theme } from "constants/theme";
+import { motion } from "framer-motion";
 
-export const Card = styled.div`
+
+export const Card = styled(motion.div)`
   text-align: center;
   max-width: 320px;
   min-height: 500px;
@@ -10,17 +12,31 @@ export const Card = styled.div`
   border-radius: 20px;
   border: ${theme.borders.main};
   background: ${(props) => props.theme.colors.white};
-  box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.07);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 
   @media ${device.desktop} {
     width: 288px;
   }
 
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+`;
 
-  &:hover {
-    scale: 1.1;
+export const BigCard = styled(motion.div)`
+  text-align: center;
+  max-width: 320px;
+  min-height: 560px;
+  padding: 10px;
+  border-radius: 20px;
+  border: ${theme.borders.main};
+  background: ${(props) => props.theme.colors.white};
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+
+  @media ${device.desktop} {
+
+    width: 360px;
   }
+
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const Title = styled.h3`

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import * as SC from "./Card.styled";
 
-const Card = ({ price }) => {
+const BigCard = ({ price }) => {
   const handleClick = () => {
     console.log("Click");
   };
@@ -25,7 +25,7 @@ const Card = ({ price }) => {
 
   return (
     <motion.div initial={"hidden"} animate={"visible"} variants={titleVariants}>
-      <SC.Card
+      <SC.BigCard
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
@@ -35,15 +35,17 @@ const Card = ({ price }) => {
           industry. Lorem Ipsum is simply dummy text of the printing and
           typesetting industry.Lorem Ipsum is simply dummy text of the printing
           and typesetting industry. Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry.
+          printing and typesetting industry.Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry.Lorem Ipsum is simply dummy text
+          of the printing and typesetting industry.
         </SC.Text>
 
         <SC.Button type="button" onClick={handleClick}>
           Get Started
         </SC.Button>
-      </SC.Card>
+      </SC.BigCard>
     </motion.div>
   );
 };
 
-export default Card;
+export default BigCard;

@@ -5,12 +5,11 @@ import styled from "styled-components";
 export const Title = styled.h2`
   text-align: left;
   padding: 30px 0;
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
 `;
 
 export const InfoWrapper = styled.div`
   max-width: 624px;
-  text-align: center;
 `;
 
 export const Wrapper = styled.div`
@@ -46,7 +45,7 @@ export const Button = styled.button`
 export const Text = styled.p`
   margin-top: 40px;
   margin-bottom: 40px;
-  color: ${theme.colors.white};
+  color: ${theme.colors.black};
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs18};
   font-weight: ${theme.fontWeights.fw500};

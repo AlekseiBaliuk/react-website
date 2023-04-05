@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
   flex-wrap: wrap;
