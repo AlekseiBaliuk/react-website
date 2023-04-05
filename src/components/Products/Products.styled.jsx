@@ -1,6 +1,8 @@
 import { theme } from "constants/theme";
 import { device } from "devices";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
 
 export const Title = styled.h2`
   text-align: left;
@@ -19,7 +21,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   border-radius: ${theme.radii.br10};
   border: ${theme.borders.main};
   color: ${theme.colors.white};

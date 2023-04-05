@@ -10,9 +10,7 @@ export const Link = styled(NavLink)`
   justify-content: center;
   border-radius: ${theme.radii.br10};
   font-family: ${theme.fonts.main};
-  /* border: ${theme.borders.accent}; */
   color: ${theme.colors.white};
-  /* background-color: ${theme.colors.white}; */
   font-size: ${theme.fontSizes.fs18};
   font-weight: ${theme.fontWeights.fw700};
   line-height: 1.375;
@@ -47,7 +45,7 @@ export const Nav = styled.nav`
   margin: 30px auto 0;
 
   @media ${device.desktop} {
-    margin: 0;
+    margin: 0 0 0 auto;
   }
 `;
 

@@ -13,7 +13,6 @@ export const Link = styled(NavLink)`
   font-family: ${theme.fonts.main};
   border: ${theme.borders.main};
   color: ${theme.colors.white};
-  /* background-color: ${theme.colors.white}; */
   font-size: ${theme.fontSizes.fs18};
   font-weight: ${theme.fontWeights.fw700};
   line-height: 1.375;
@@ -28,15 +27,13 @@ export const Link = styled(NavLink)`
     font-size: ${theme.fontSizes.fs16};
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 130px;
+    width: 125px;
     height: 35px;
   }
   &.active,
   &:hover {
     color: ${theme.colors.accent};
     background-color: ${theme.colors.white};
-    /* color: ${theme.colors.white};
-    background-color: ${theme.colors.accent}; */
   }
 `;
 
@@ -45,13 +42,15 @@ export const Nav = styled.nav`
     margin-right: 20px;
   }
   @media ${device.desktop} {
-    /* margin-left: auto; */
+    margin-left: 20px;
   }
 `;
+
 export const List = styled.ul`
   display: flex;
   justify-content: center;
 `;
+
 export const ListItem = styled(motion.li)`
   &:last-child {
     margin-left: 12px;

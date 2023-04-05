@@ -3,12 +3,11 @@ import { device } from "devices";
 import { theme } from "constants/theme";
 import { motion } from "framer-motion";
 
-
 export const Card = styled(motion.div)`
   text-align: center;
   max-width: 320px;
   min-height: 500px;
-  padding: 10px;
+  overflow: hidden;
   border-radius: 20px;
   border: ${theme.borders.main};
   background: ${(props) => props.theme.colors.white};
@@ -25,14 +24,13 @@ export const BigCard = styled(motion.div)`
   text-align: center;
   max-width: 320px;
   min-height: 560px;
-  padding: 10px;
+  overflow: hidden;
   border-radius: 20px;
   border: ${theme.borders.main};
   background: ${(props) => props.theme.colors.white};
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 
   @media ${device.desktop} {
-
     width: 360px;
   }
 
@@ -42,6 +40,8 @@ export const BigCard = styled(motion.div)`
 export const Title = styled.h3`
   padding: 20px;
 
+  background-color: ${theme.colors.accent};
+  color: ${theme.colors.white};
   font-family: ${theme.fonts.main};
   font-size: ${theme.fontSizes.fs28};
   font-weight: ${theme.fontWeights.fw700};
@@ -55,7 +55,7 @@ export const Text = styled.p`
   font-weight: ${theme.fontWeights.fw500};
 
   @media ${device.tablet} {
-    padding: 10px 10px;
+    padding: 30px 20px;
   }
 `;
 
